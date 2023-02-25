@@ -1,0 +1,92 @@
+.about {
+    width: 100%;
+    background-color: #262626;
+    padding: 50px 0;
+    margin-top: 100px;
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .content {
+            margin-right: 20px;
+            h1 {
+                font-size: 40px;
+                color: rgb(236,167,1);
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+
+            h2 {
+                margin: 20px 0;
+                font-size: 30px;
+                color: rgb(236,167,1);
+            }
+
+            p {
+                margin-top: 40px;
+                max-width: 30vw;
+                text-align: left;
+                font-size: 20px;
+                color: #c7c7c7;
+            }
+        }
+
+        img {
+            max-width: 40vw;
+            border-radius: 5px;
+        }
+        a {
+            writing-mode: vertical-lr;
+            color: rgb(236,167,1);
+            font-size: 25px;
+            animation: bounce 2s ease 3s infinite;
+
+            i {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .socials {
+        width: 90%;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: #c7c7c7;
+        }
+
+        .icons {
+            margin-left: 20px;
+            a {
+                i {
+                    font-size: 30px;
+                    color: #f08113;
+                }
+                &:last-child {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
+}

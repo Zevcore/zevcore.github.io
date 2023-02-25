@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 9;
+}
+.header .logo img {
+  max-width: 100px;
+  transition: 0.3s ease all;
+}
+.header .logo:hover img {
+  transform: scale(0.9);
+}
+.header ul {
+  display: flex;
+}
+.header ul li {
+  margin: 0 10px;
+  padding: 0 10px;
+}
+.header ul li a {
+  color: #808080;
+  display: block;
+  transition: 0.3s ease-in-out all;
+  font-size: 1.3rem;
+}
+.header ul li a:hover {
+  transform: scale(1.1);
+  color: rgb(236, 167, 1);
+}
+
+.about {
+  width: 100%;
+  background-color: #262626;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+.about .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .wrapper .content {
+  margin-right: 20px;
+}
+.about .wrapper .content h1 {
+  font-size: 40px;
+  color: rgb(236, 167, 1);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.about .wrapper .content h2 {
+  margin: 20px 0;
+  font-size: 30px;
+  color: rgb(236, 167, 1);
+}
+.about .wrapper .content p {
+  margin-top: 40px;
+  max-width: 30vw;
+  text-align: left;
+  font-size: 20px;
+  color: #c7c7c7;
+}
+.about .wrapper img {
+  max-width: 40vw;
+  border-radius: 5px;
+}
+.about .wrapper a {
+  writing-mode: vertical-lr;
+  color: rgb(236, 167, 1);
+  font-size: 25px;
+  animation: bounce 2s ease 3s infinite;
+}
+.about .wrapper a i {
+  margin-top: 20px;
+}
+.about .socials {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.about .socials p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #c7c7c7;
+}
+.about .socials .icons {
+  margin-left: 20px;
+}
+.about .socials .icons a i {
+  font-size: 30px;
+  color: #f08113;
+}
+.about .socials .icons a:last-child {
+  margin-left: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-55px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  58% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  65% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+.portfolio {
+  width: 90%;
+  margin: 60px auto 100px auto;
+}
+.portfolio h1 {
+  color: rgb(236, 167, 1);
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px 0 50px;
+}
+.portfolio .albums {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio .albums .album {
+  margin: 30px 20px;
+}
+.portfolio .albums .album p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.portfolio .albums .album a img {
+  border-radius: 5px;
+  transition: 0.3s ease all;
+}
+.portfolio .albums .album a:hover img {
+  transform: scale(1.02);
+}
+
+.contact {
+  width: 100%;
+  margin: 50px 0 0 0;
+  background-color: #262626;
+  padding: 20px 0 30px 0;
+}
+.contact h1 {
+  padding: 20px 0;
+  text-align: center;
+  color: rgb(236, 167, 1);
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.contact .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .container .details p {
+  font-size: 2rem;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.contact .container .details p:first-child {
+  color: green;
+}
+.contact .container .details p:nth-child(2) {
+  color: yellow;
+}
+.contact .container .details p:nth-child(3) {
+  color: red;
+}
+.contact .container .details .data {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .container .details .data span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contact .container .details .data span i {
+  color: #c7c7c7;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.contact .container .details .data span a {
+  color: #c7c7c7;
+  font-size: 20px;
+}
+.contact .container form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.contact .container form .wrapper {
+  display: flex;
+}
+.contact .container form .wrapper .element {
+  display: flex;
+  flex-direction: column;
+}
+.contact .container form label {
+  font-size: 1.3rem;
+  color: #c7c7c7;
+  margin: 0 0 10px 0;
+}
+.contact .container form input, .contact .container form textarea {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgb(236, 167, 1);
+  border-radius: 5px;
+}
+.contact .container form input:focus, .contact .container form textarea:focus {
+  outline: none;
+  border: 2px solid #d19402;
+}
+.contact .container form textarea {
+  height: 300px;
+}
+.contact .container form input {
+  height: 30px;
+  width: 300px;
+}
+.contact .container form input[type=submit] {
+  background-color: rgb(236, 167, 1);
+  font-size: 1.3rem;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #1a1919;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=index.css.map */

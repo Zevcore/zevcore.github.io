@@ -1,0 +1,116 @@
+.contact {
+    width: 100%;
+    margin: 50px 0 0 0;
+    background-color: #262626;
+    padding: 20px 0 30px 0;
+
+    h1 {
+        padding: 20px 0;
+        text-align: center;
+        color: rgb(236,167,1);
+        font-size: 3rem;
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        .details {
+            p {
+                font-size: 2rem;
+                margin: 5px 0;
+                font-weight: bold;
+
+                &:first-child {
+                    color: green;
+                }
+
+                &:nth-child(2) {
+                    color: yellow;
+                }
+
+                &:nth-child(3) {
+                    color: red;
+                }
+            }
+
+            .data {
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    i {
+                        color: #c7c7c7;
+                        font-size: 25px;
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        color: #c7c7c7;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+            .wrapper {
+                display: flex;
+
+                .element {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            label {
+                font-size: 1.3rem;
+                color: #c7c7c7;
+                margin: 0 0 10px 0;
+            }
+
+            input,textarea {
+                margin-right: 20px;
+                margin-bottom: 10px;
+
+                background-color: transparent;
+                border: none;
+                border: 1px solid rgb(236,167,1);
+                border-radius: 5px;
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid #d19402;
+                }
+            }
+
+            textarea {
+                height: 300px;
+            }
+
+            input {
+                height: 30px;
+                width: 300px;
+            }
+
+            input[type=submit] {
+                background-color: rgb(236,167,1);
+                font-size: 1.3rem;
+                height: 40px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

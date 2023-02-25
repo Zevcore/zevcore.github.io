@@ -1,0 +1,39 @@
+.portfolio {
+    width: 90%;
+    margin: 60px auto 100px auto;
+
+    h1 {
+        color: rgb(236,167,1);
+        font-size: 3rem;
+        text-align: center;
+        margin: 20px 0 50px;
+    }
+
+    .albums {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+
+       .album {
+            margin: 30px 20px;
+            p {
+                font-size: 1.3rem;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            a {
+                img {
+                    border-radius: 5px;
+                    transition: .3s ease all;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+       }
+    }
+}

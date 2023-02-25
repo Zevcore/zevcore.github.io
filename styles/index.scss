@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import 'reset';
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Index
+@import 'index/header';
+@import 'index/about';
+@import 'index/portfolio';
+@import 'index/contact';
+@import 'index/footer';
