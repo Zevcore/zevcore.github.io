@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+  .contact {
+    .container {
+      flex-direction: column;
+      
+      .details {
+        text-align: center;
+        
+        .data {
+          margin: 50px 0;
+        }
+      }
+      
+      form {
+        .wrapper {
+          flex-direction: column;
+        }
+        
+        textarea {
+          width: 102%;
+        }
+      }
+    }
+  }
+}

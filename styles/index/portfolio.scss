@@ -1,12 +1,16 @@
 .portfolio {
     width: 90%;
-    margin: 60px auto 100px auto;
+    margin: 0 auto 100px auto;
 
-    h1 {
-        color: rgb(236,167,1);
-        font-size: 3rem;
-        text-align: center;
-        margin: 20px 0 50px;
+    h1.heading {
+      text-align: center;
+      font-size: 2.3rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #c7c7c7;
+      font-family: 'Montserrat', sans-serif;
+      margin: 30px 0;
+  
     }
 
     .albums {

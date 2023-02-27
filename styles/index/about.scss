@@ -1,8 +1,16 @@
 .about {
     width: 100%;
-    background-color: #262626;
-    padding: 50px 0;
-    margin-top: 100px;
+    background-color: white;
+    
+    h1.heading {
+        text-align: center;
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #c7c7c7;
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px 0;
+    }
 
     .wrapper {
         width: 90%;
@@ -17,15 +25,19 @@
             margin-right: 20px;
             h1 {
                 font-size: 40px;
-                color: rgb(236,167,1);
+                color: black;
                 font-weight: bold;
                 letter-spacing: 5px;
             }
 
             h2 {
-                margin: 20px 0;
                 font-size: 30px;
                 color: rgb(236,167,1);
+                color: #1a1919;
+            }
+            
+            h3 {
+                color: gray;
             }
 
             p {
@@ -33,7 +45,8 @@
                 max-width: 30vw;
                 text-align: left;
                 font-size: 20px;
-                color: #c7c7c7;
+                color: #3d3d3d;
+                line-height: 30px;
             }
         }
 
@@ -43,7 +56,7 @@
         }
         a {
             writing-mode: vertical-lr;
-            color: rgb(236,167,1);
+            color: #262626;
             font-size: 25px;
             animation: bounce 2s ease 3s infinite;
 
@@ -55,15 +68,16 @@
 
     .socials {
         width: 90%;
-        margin: 0 auto;
+        margin: 100px auto 50px auto;
 
         display: flex;
         align-items: center;
+        justify-content: center;
 
         p {
             font-size: 1.2rem;
             letter-spacing: 2px;
-            color: #c7c7c7;
+            color: #3d3d3d;
         }
 
         .icons {
@@ -71,7 +85,7 @@
             a {
                 i {
                     font-size: 30px;
-                    color: #f08113;
+                    color: #c7c7c7;
                 }
                 &:last-child {
                     margin-left: 10px;
