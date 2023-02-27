@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/album.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Piotr RASTATrooper Tabencki - Portfolio</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<header class="header" id="home">
+    <a class="logo" href="/">FOTOGRAFIA Piotr Tabencki</a>
+    <div onclick="displayMenu()" class="burger"><i class="ri-menu-line"></i></div>
+    <ul>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
+</header>
+
+<section class="lightbox" style="margin-top: 50px;">
+    <h1 data-aos="flip-up" class="heading">Album XYZ</h1>
+    <div class="wrapper">
+        <a data-fslightbox="gallery" href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="https://i.imgur.com/fsyrScY.jpg">
+        </a>
+        <a data-fslightbox="gallery"
+           href="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg">
+            <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg">
+        </a>
+        <a data-fslightbox="gallery"
+           href="https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg">
+            <img src="https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg">
+        </a>
+        <a data-fslightbox="gallery" href="https://i.imgur.com/fsyrScY.jpg">
+            <img src="https://i.imgur.com/fsyrScY.jpg">
+        </a>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h1 data-aos="flip-up" class="heading">Kontakt</h1>
+    <div class="container" data-aos="zoom-in">
+        <div class="details">
+            <p>One Love</p>
+            <p>One World</p>
+            <p>One Family</p>
+
+            <div class="data">
+                <span><i class="ri-mail-line"></i> <a href="mailto:tabencki.fotografia@gmail.com">tabencki.fotografia@gmail.com</a></span>
+                <span><i class="ri-phone-line"></i> <a href="tel:+48510694384">+48 510 694 384</a></span>
+            </div>
+        </div>
+        <form>
+            <div class="wrapper">
+                <div class="element">
+                    <label for="firstname">Imię</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="element">
+                    <label for="lastname">Nazwisko</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="element">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="element">
+                    <label for="phone">Numer telefonu</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+            </div>
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <p>&copy; Piotr RASTATrooper Tabencki 2023 - All rights reserved.</p>
+    </section>
+
+</footer>
+
+<script src="scripts/swiper.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/fslightbox.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

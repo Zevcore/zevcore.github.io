@@ -17,35 +17,34 @@
 </head>
 <body>
 
-    <header class="header" id="home">
-        <a class="logo" href="/">FOTOGRAFIA Piotr Tabencki</a>
-        <div onclick="displayMenu()" class="burger"><i class="ri-menu-line"></i></div>
-        <ul>
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </header>
-    
-    <script>
-        function displayMenu() {
-            const ul = document.querySelector('.header').querySelector("ul");
-            ul.style.display === "flex" ? ul.style.display = "none" : ul.style.display = "flex";
-        }
-    </script>
+<header class="header" id="home">
+    <a class="logo" href="/">FOTOGRAFIA Piotr Tabencki</a>
+    <div onclick="displayMenu()" class="burger"><i class="ri-menu-line"></i></div>
+    <ul>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
+</header>
 
 <div class="swiper">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://lh3.googleusercontent.com/-XTi_Z8sMQLs/YXmTL-UagCI/AAAAAAAAkJo/MISJUqYRj-80qnjraihSNhg5bnp9bIZzwCLcBGAsYHQ/s16000/colorful_mountains_by_rmradev_dep7u6t%2B%25281%2529.png" alt=""></div>
-        <div class="swiper-slide"><img src="https://www.maketecheasier.com/assets/uploads/2022/10/Featured-Image-Best-4K-Wallpapers-Windows.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/4c2e6c_978f362acad842bc83474b6c6a331c92~mv2.jpg/v1/fill/w_980,h_966,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c2e6c_978f362acad842bc83474b6c6a331c92~mv2.jpg" alt=""></div>
+        <div class="swiper-slide"><img
+                src="https://lh3.googleusercontent.com/-XTi_Z8sMQLs/YXmTL-UagCI/AAAAAAAAkJo/MISJUqYRj-80qnjraihSNhg5bnp9bIZzwCLcBGAsYHQ/s16000/colorful_mountains_by_rmradev_dep7u6t%2B%25281%2529.png"
+                alt=""></div>
+        <div class="swiper-slide"><img
+                src="https://www.maketecheasier.com/assets/uploads/2022/10/Featured-Image-Best-4K-Wallpapers-Windows.jpg"
+                alt=""></div>
+        <div class="swiper-slide"><img
+                src="https://static.wixstatic.com/media/4c2e6c_978f362acad842bc83474b6c6a331c92~mv2.jpg/v1/fill/w_980,h_966,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4c2e6c_978f362acad842bc83474b6c6a331c92~mv2.jpg"
+                alt=""></div>
     </div>
 
     <div class="swiper-pagination"></div>
-    
+
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    
+
 </div>
 
 <section class="about" id="about">
@@ -168,25 +167,11 @@
     </section>
 
 </footer>
+
+<script src="scripts/swiper.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/fslightbox.js"></script>
 <script>
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        autoplay: {
-            delay: 5000,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
     AOS.init();
 </script>
 </body>
